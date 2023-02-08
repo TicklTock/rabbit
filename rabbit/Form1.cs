@@ -70,5 +70,11 @@ namespace rabbit
                 });
             
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //同时满足属性窗口ShowInTaskbar=false and TopMost = true，并且此处为TopMost = true，才能成功置顶。
+            TopMost = true;
+        }
     }
 }
